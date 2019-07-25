@@ -36,3 +36,30 @@ body {
         animation-timing-function: ease-out;
     }
 }
+
+.heading-secondary {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-black, $color-primary-grey);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 0.4rem;
+    line-height: 2.4rem;
+
+    &:before,
+    &:after {
+        content: '';
+        bottom: 0.2rem;
+        left: 0;
+        right: 0;
+        height: 0.2rem;
+        background: $color-primary;
+    }
+    
+
+    span {
+        font-weight: 600;
+    }
+}
