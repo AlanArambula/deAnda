@@ -5,12 +5,12 @@ $color-primary-grey: #636363;
 $color-white: #fff;
 $color-black: #000;
 
+// FONT
+$default-font-size: 1.6rem;
+
 //GRID
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-horizontal: 6rem;
 
-// LINE UNDER TEXT- TITLE SECTIONS
-$duration: .2s;
-$distance: 0.8rem;
-$easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+

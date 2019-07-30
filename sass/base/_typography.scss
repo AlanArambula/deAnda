@@ -41,25 +41,68 @@ body {
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 300;
-    display: inline-block;
-    background-image: linear-gradient(to right, $color-black, $color-primary-grey);
-    -webkit-background-clip: text;
-    color: transparent;
     letter-spacing: 0.4rem;
-    line-height: 2.4rem;
+    display: inline-block;
+    overflow: hidden;
+    white-space:nowrap;
 
-    &:before,
-    &:after {
-        content: '';
-        bottom: 0.2rem;
-        left: 0;
-        right: 0;
-        height: 0.2rem;
-        background: $color-primary;
+    &:first-of-type {
+        animation: showup 7s infinite;
     }
-    
 
-    span {
-        font-weight: 600;
+    &:last-of-type {
+        width: 0px;
+        animation: reveal 7s infinite;
     }
 }
+
+.heading-secondary span {
+    font-weight: 600;    
+}
+
+.heading-secondary span:last-of-type {
+    margin-left: -400px;
+    animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {opacity: 1;}
+    20% {opacity: 1;}
+    80% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes slidein {
+    0% {margin-left: -800px;}
+    20% {margin-left: -800px;}
+    35% {margin-left: 0px;}
+    100% {margin-left: 0px;}
+}
+
+@keyframes reveal {
+    0% {opacity: 0; width: 0px;}
+    20% {opacity: 1; width: 0px;}
+    30% {width: 600px;}
+    80% {opacity: 1;}
+    100% {opacity: 0; width: 600px;}
+}
+
+.heading-tertiary {
+    font-size: $default-font-size;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+
+.paragraph {
+    font-size: $default-font-size;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+
+}
+
+
+
+

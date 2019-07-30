@@ -55,3 +55,28 @@
     
     }
 }
+
+.btn-text {
+    &:link,
+    &:visited {
+        color: #25D366;
+        display: inline-block;
+        text-decoration: none;
+        padding: 0.3rem;
+        border-bottom: 0.1rem solid #25D366;
+        padding: 0.3rem;
+        transition: all 0.2s;
+    }
+
+    &:hover {
+        background-color: #25D366;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.15s);
+        transform: translateY(-0.2rem);
+
+    }
+
+    &:active {
+
+    }
+}
