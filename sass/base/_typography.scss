@@ -45,6 +45,7 @@ body {
     display: inline-block;
     overflow: hidden;
     white-space:nowrap;
+    
 
     &:first-of-type {
         animation: showup 7s infinite;
@@ -57,7 +58,8 @@ body {
 }
 
 .heading-secondary span {
-    font-weight: 600;    
+    font-weight: 600;
+    background-color: $color-white;  
 }
 
 .heading-secondary span:last-of-type {
@@ -73,8 +75,8 @@ body {
 }
 
 @keyframes slidein {
-    0% {margin-left: -800px;}
-    20% {margin-left: -800px;}
+    0% {margin-left: -20px;}
+    20% {margin-left: -100px;}
     35% {margin-left: 0px;}
     100% {margin-left: 0px;}
 }
