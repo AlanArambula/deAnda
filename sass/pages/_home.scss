@@ -3,8 +3,14 @@
 }
 
 .section-features {
-    padding: 20rem 0;
-    
+    margin-top: 6rem;
+    padding: 16rem 0;
     background-image: url(../img/nat-4.jpg);
     background-size: cover;
+}
+
+.section-custumers {
+    margin-top: 6rem;
+    background-color: $color-primary-grey-light;
+    padding: 16rem 0;
 }

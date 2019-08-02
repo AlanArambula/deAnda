@@ -46,7 +46,6 @@ body {
     overflow: hidden;
     white-space:nowrap;
     
-
     &:first-of-type {
         animation: showup 7s infinite;
     }
@@ -58,8 +57,7 @@ body {
 }
 
 .heading-secondary span {
-    font-weight: 600;
-    background-color: $color-white;  
+    font-weight: 600; 
 }
 
 .heading-secondary span:last-of-type {
@@ -76,7 +74,7 @@ body {
 
 @keyframes slidein {
     0% {margin-left: -20px;}
-    20% {margin-left: -100px;}
+    20% {margin-left: -10px;}
     35% {margin-left: 0px;}
     100% {margin-left: 0px;}
 }
@@ -102,6 +100,21 @@ body {
     &:not(:last-child) {
         margin-bottom: 3rem;
     }
+}
+
+.second-h2 {
+    color: $color-white;
+}
+
+.paragraph__center {
+    color: $color-white;
+}
+
+.heading-secondary-custumers {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0.4rem;
 
 }
 
