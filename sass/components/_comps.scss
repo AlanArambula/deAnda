@@ -47,7 +47,7 @@
     position: relative;
 
     &__photo {
-        width: 80%;
+        width: 60%;
         position: absolute;
 
         &--p5 {
@@ -55,23 +55,29 @@
         }
 
         &--p6 {
-            left: 125%;
+            left: 70%;
         }
 
         &--p7 {
-            left: 250%;
+            left: 140%;
         }
 
         &--p8 {
-            left: 375%;
+            left: 210%;
         }
 
-        
+        &--p9 {
+            left: 280%;
+        }
+
+        &--p10 {
+            left: 350%;
+        }
+
+        &--p11 {
+            left: 420%;
+        }   
     }
-
-
-
-
 }
 
    
