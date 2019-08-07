@@ -29,6 +29,14 @@
                 background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark);
             }
 
+            &-2 {
+                background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark);
+            }
+
+            &-3 {
+                background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark);
+            }
+
         }
     }
 
@@ -79,6 +87,14 @@
         padding: 0.5rem 1rem;
 
         &--1 {
+            background-color: rgba($color-black, .5);
+        }
+
+        &--2 {
+            background-color: rgba($color-black, .5);
+        }
+
+        &--3 {
             background-color: rgba($color-black, .5);
         }
     }
