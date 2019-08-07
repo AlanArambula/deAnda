@@ -7,22 +7,19 @@
     height: 50rem;
 
     &__side {
-        color: #fff;
-        font-size: 2rem;
-
         height: 50rem;
-        transition: all 8s ease;
+        transition: all .8s ease;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         backface-visibility: hidden;
-        border-radius: 3px;
+        overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15); 
 
 
         &--front {
-            background-color: $color-primary;
+            background-color: $color-white;
         }
 
         &--back {
@@ -48,10 +45,87 @@
         background-size: cover;
         height: 25rem;
         background-blend-mode: color-burn;
+        clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+        -webkit-clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
 
         &--1 {
             background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark),
-            url(../img/fondo_01.jpg);
+            url(../img/fondo_02.jpg);
         }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark),
+            url(../img/fondo_03.jpg);
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark),
+            url(../img/fondo_04.jpg);
+        }
+    }
+
+    &__heading {
+        font-size: 2rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        position: absolute;
+        top: 16rem;
+        right: 0;
+    }
+
+    &__heading-span {
+        padding: 0.5rem 1rem;
+
+        &--1 {
+            background-color: rgba($color-black, .5);
+        }
+    }
+
+    &__details {
+        padding: 3rem;
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.4rem;
+                padding: 0.6rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-primary-grey-medium;
+                }
+            }
+        }
+    }
+
+    //BACK SIDE STYLING
+
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    &__contact-box {
+        
+        color: $color-white;
+        margin-bottom: 8rem;
+    }
+
+    &__contact-text {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &__contact-cel {
+        font-size: 3rem;
+        font-weight: 100;
     }
 }
