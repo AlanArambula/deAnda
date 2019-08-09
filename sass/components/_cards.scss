@@ -26,15 +26,15 @@
             transform: rotateY(-180deg);
 
             &-1 {
-                background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark);
+                background-image: linear-gradient(to right bottom, $color-secondary-red-light, $color-secondary-red);
             }
 
             &-2 {
-                background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark);
+                background-image: linear-gradient(to right bottom, $color-secondary-yellow-light, $color-secondary-yellow);
             }
 
             &-3 {
-                background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark);
+                background-image: linear-gradient(to right bottom, $color-secondary-green-light, $color-secondary-green);
             }
 
         }
@@ -57,17 +57,17 @@
         -webkit-clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
 
         &--1 {
-            background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark),
+            background-image: linear-gradient(to right bottom, $color-secondary-red-light, $color-secondary-red),
             url(../img/fondo_02.jpg);
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark),
+            background-image: linear-gradient(to right bottom, $color-secondary-yellow-light, $color-secondary-yellow),
             url(../img/fondo_03.jpg);
         }
 
         &--3 {
-            background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark),
+            background-image: linear-gradient(to right bottom, $color-secondary-green-light, $color-secondary-green),
             url(../img/fondo_04.jpg);
         }
     }
@@ -127,6 +127,11 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+
+        & a {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
     }
 
     &__contact-box {

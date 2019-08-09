@@ -189,11 +189,13 @@ body {
   .btn--white::after {
     background-color: #fff; }
 
-.btn--blue {
-  background-color: #3f6f96;
-  color: #fff; }
-  .btn--blue::after {
-    background-color: #305572; }
+.btn--black {
+  background-color: #636363;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600; }
+  .btn--black::after {
+    background-color: #636363; }
 
 .btn::after {
   content: "";
@@ -217,7 +219,6 @@ body {
   text-decoration: none;
   padding: 0.3rem;
   border-bottom: 0.1rem solid #25D366;
-  padding: 0.3rem;
   transition: all 0.2s; }
 
 .btn-text:hover {
@@ -314,11 +315,11 @@ body {
     .card__side--back {
       transform: rotateY(-180deg); }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #3f6f96, #305572); }
+        background-image: linear-gradient(to right bottom, #f85032, #ff1500); }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #3f6f96, #305572); }
+        background-image: linear-gradient(to right bottom, #F4C150, #ffb311); }
       .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, #3f6f96, #305572); }
+        background-image: linear-gradient(to right bottom, #62ff00, #20c204); }
   .card:hover .card__side--front {
     transform: rotateY(180deg); }
   .card:hover .card__side--back {
@@ -330,11 +331,11 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #3f6f96, #305572), url(../img/fondo_02.jpg); }
+      background-image: linear-gradient(to right bottom, #f85032, #ff1500), url(../img/fondo_02.jpg); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #3f6f96, #305572), url(../img/fondo_03.jpg); }
+      background-image: linear-gradient(to right bottom, #F4C150, #ffb311), url(../img/fondo_03.jpg); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #3f6f96, #305572), url(../img/fondo_04.jpg); }
+      background-image: linear-gradient(to right bottom, #62ff00, #20c204), url(../img/fondo_04.jpg); }
   .card__heading {
     font-size: 2rem;
     font-weight: 300;
@@ -370,6 +371,9 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+    .card__cta a {
+      font-size: 1.2rem;
+      font-weight: 600; }
   .card__contact-box {
     color: #fff;
     margin-bottom: 8rem; }
@@ -407,6 +411,17 @@ body {
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + ( 2 * 6rem)); }
 
+.header-top {
+  margin-top: 2rem;
+  text-align: center; }
+
+.logo-box {
+  margin-left: 50%; }
+
+.logo {
+  height: 7rem;
+  transform: translateX(-50%); }
+
 .header {
   height: 95vh;
   /* background-image: linear-gradient(to right bottom, rgba(), rgba(), url(); */
@@ -424,16 +439,6 @@ body {
   .header__text-box a {
     font-size: 1.2rem;
     font-weight: 600; }
-
-.menu {
-  margin-top: 1rem; }
-
-.logo-box {
-  margin-left: 50%; }
-
-.logo {
-  height: 7rem;
-  transform: translateX(-50%); }
 
 .section-about {
   padding: 10rem 0; }

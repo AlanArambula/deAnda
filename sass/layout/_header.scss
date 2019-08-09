@@ -1,3 +1,17 @@
+.header-top {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.logo-box {
+   margin-left: 50%;
+}
+
+.logo {
+    height: 7rem;
+    transform: translateX(-50%);
+}
+
 .header {
     height: 95vh;
     /* background-image: linear-gradient(to right bottom, rgba(), rgba(), url(); */
@@ -19,16 +33,4 @@
         font-size: 1.2rem;
         font-weight: 600;
     }
-}
-.menu {
-    margin-top: 1rem;
-}
-
-.logo-box {
-   margin-left: 50%;
-}
-
-.logo {
-    height: 7rem;
-    transform: translateX(-50%);
 }
