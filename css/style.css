@@ -83,6 +83,9 @@ body {
   .heading-secondary:last-of-type {
     width: 0px;
     animation: reveal 7s infinite; }
+  .heading-secondary--phone {
+    font-size: 2rem;
+    font-weight: 400; }
 
 .heading-secondary span {
   font-weight: 600; }
@@ -411,9 +414,14 @@ body {
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + ( 2 * 6rem)); }
 
+.header_row {
+  margin-bottom: 0; }
+
 .header-top {
-  margin-top: 2rem;
+  margin: 1rem 0;
   text-align: center; }
+  .header-top_text {
+    margin-top: 2rem; }
 
 .logo-box {
   margin-left: 50%; }
@@ -439,6 +447,8 @@ body {
   .header__text-box a {
     font-size: 1.2rem;
     font-weight: 600; }
+  .header__social {
+    margin: 2rem 0 0 -1rem; }
 
 .section-about {
   padding: 10rem 0; }

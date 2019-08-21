@@ -1,6 +1,13 @@
+.header_row {
+    margin-bottom: 0;
+}
 .header-top {
-    margin-top: 2rem;
+    margin: 1rem 0;
     text-align: center;
+
+    &_text {
+        margin-top: 2rem;
+    }
 }
 
 .logo-box {
@@ -32,5 +39,9 @@
     &__text-box a {
         font-size: 1.2rem;
         font-weight: 600;
+    }
+
+    &__social {
+        margin: 2rem 0 0 -1rem;
     }
 }

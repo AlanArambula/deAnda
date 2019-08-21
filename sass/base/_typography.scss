@@ -54,6 +54,12 @@ body {
         width: 0px;
         animation: reveal 7s infinite;
     }
+
+    &--phone {
+        font-size: 2rem;
+        font-weight: 400;
+        
+    }
 }
 
 .heading-secondary span {
